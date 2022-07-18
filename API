@@ -6,11 +6,14 @@
 Gunakan API Key ini untuk menggunakan API Laptop
 bdf43c46d0cae92481ebae13438e6039
 
->Get One Data
+ * Bisa dengan asteriks.
+    - Bisa juga dengan minus.
+    + Atau dengan plus.
+* Get One Data
 Get One Data digunakan untuk mendapatkan satu data lengkap dengan menggunakan id_laptop sebagai parameternya
   
 | Method |                      Url                      |
 |:------:|:---------------------------------------------:|
 |   Get  | http://localhost/apilaptop/api/getonedata.php |
 
-*Parameter
+- Parameter
