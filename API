@@ -6,9 +6,81 @@
 Gunakan API Key ini untuk menggunakan API Laptop
 bdf43c46d0cae92481ebae13438e6039
 
- * Bisa dengan asteriks.
-    - Bisa juga dengan minus.
-    + Atau dengan plus.
+* Get All Data
+Get All Data digunakan untuk melihat semua spesfikasi laptop yang ada.
+
+** URL
+| Method |                      Url                      |
+|:------:|:---------------------------------------------:|
+|   Get  | http://localhost/apilaptop/api/getonedata.php |
+
+** Parameter
+| Method | Parameter | Wajib | Keterangan  |
+|:------:|:---------:|-------|-------------|
+|   Get  | Key       | Iya   | API Key     |
+
+** Response
+Respon Sukses
+        {
+            "status": {
+                "code": 200,
+                "description": "Request Valid"
+            },
+            "results": [
+                {
+                    "id_laptop": "1115",
+                    "company": "Dell",
+                    "product": "Latitude E5270",
+                    "type_name": "Ultrabook",
+                    "inches": "12.5",
+                    "screen_resolution": "1366x768",
+                    "cpu": "Intel Core i3 6100U 2.3GHz",
+                    "ram": "4GB",
+                    "memory": "500GB HDD",
+                    "gpu": "Intel HD Graphics 520",
+                    "op_sys": "Windows 7",
+                    "weight": "1.5kg",
+                    "price_euros": "1135.15"
+                },
+                {
+                    "id_laptop": "1116",
+                    "company": "Dell",
+                    "product": "Latitude E5270",
+                    "type_name": "Ultrabook",
+                    "inches": "12.5",
+                    "screen_resolution": "1366x768",
+                    "cpu": "Intel Core i3 6100U 2.3GHz",
+                    "ram": "4GB",
+                    "memory": "128GB SSD",
+                    "gpu": "Intel HD Graphics 520",
+                    "op_sys": "Windows 7",
+                    "weight": "1.5kg",
+                    "price_euros": "1166.97"
+                },
+                {
+                    "id_laptop": "1117",
+                    "company": "Acer",
+                    "product": "Chromebook 15",
+                    "type_name": "Notebook",
+                    "inches": "15.6",
+                    "screen_resolution": "1366x768",
+                    "cpu": "Intel Celeron Dual Core 3205U 1.5GHz",
+                    "ram": "4GB",
+                    "memory": "16GB SSD",
+                    "gpu": "Intel HD Graphics",
+                    "op_sys": "Chrome OS",
+                    "weight": "2.20kg",
+                    "price_euros": "209.00"
+                },
+        
+Respon Gagal
+ {
+              "status": {
+              "code": 400,
+              "description": "Request Invalid"
+              }
+          }
+
 * Get One Data
 Get One Data digunakan untuk mendapatkan satu data lengkap dengan menggunakan id_laptop sebagai parameternya
   
@@ -16,4 +88,5 @@ Get One Data digunakan untuk mendapatkan satu data lengkap dengan menggunakan id
 |:------:|:---------------------------------------------:|
 |   Get  | http://localhost/apilaptop/api/getonedata.php |
 
-- Parameter
+* Parameter
+
