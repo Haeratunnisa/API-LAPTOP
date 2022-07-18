@@ -1,20 +1,15 @@
-#Dokumentasi API Laptop
+# Dokumentasi API Laptop
 
-_```API Token```
+**API Token**
 
 Gunakan API Key ini untuk menggunakan API Laptop
 bdf43c46d0cae92481ebae13438e6039
 
-_```Get One Data```
+>Get One Data
 Get One Data digunakan untuk mendapatkan satu data lengkap dengan menggunakan id_laptop sebagai parameternya
-
-<ol>
-  <li> URL </li>
   
 | Method |                      Url                      |
 |:------:|:---------------------------------------------:|
 |   Get  | http://localhost/apilaptop/api/getonedata.php |
 
-  <li> Parameter </li>
-  <li> Source Code </li>
-</ol>
+*Parameter
