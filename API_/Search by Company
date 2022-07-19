@@ -1,0 +1,60 @@
+* Search by company
+search digunakan untuk mencari merek laptop yang diinginkan dengan menggunakan parameter nama company laptop
+
+** URL
+| Method |                              Url                              |
+|:------:|:-------------------------------------------------------------:|
+|   Get  | http://localhost/apilaptop/api/search_name.php?company=dell   |
+
+** Parameter
+| Method | Parameter | Header | Wajib |
+|:------:|:---------:|:------:|:-----:|
+|   Get  |  Company  |   Key  |  Iya  |
+
+** Response
+Respon sukses
+{
+    "status": {
+        "code": 200,
+        "description": "Request Valid"
+    },
+    "results": [
+        {
+            "id_laptop": "1115",
+            "company": "Dell",
+            "product": "Latitude E5270",
+            "type_name": "Ultrabook",
+            "inches": "12.5",
+            "screen_resolution": "1366x768",
+            "cpu": "Intel Core i3 6100U 2.3GHz",
+            "ram": "4GB",
+            "memory": "500GB HDD",
+            "gpu": "Intel HD Graphics 520",
+            "op_sys": "Windows 7",
+            "weight": "1.5kg",
+            "price_euros": "1135.15"
+        },
+        {
+            "id_laptop": "1116",
+            "company": "Dell",
+            "product": "Latitude E5270",
+            "type_name": "Ultrabook",
+            "inches": "12.5",
+            "screen_resolution": "1366x768",
+            "cpu": "Intel Core i3 6100U 2.3GHz",
+            "ram": "4GB",
+            "memory": "128GB SSD",
+            "gpu": "Intel HD Graphics 520",
+            "op_sys": "Windows 7",
+            "weight": "1.5kg",
+            "price_euros": "1166.97"
+        },
+          
+
+Respon gagal
+{
+    "status": {
+        "code": 400,
+        "description": "Request Invalid"
+    }
+}
