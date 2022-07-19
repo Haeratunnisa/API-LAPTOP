@@ -1,0 +1,46 @@
+* Get One Data
+Get One Data digunakan untuk mendapatkan satu data lengkap dengan menggunakan id_laptop sebagai parameternya
+
+** URL
+| Method |                              Url                             |
+|:------:|:------------------------------------------------------------:|
+|   Get  | http://localhost/apilaptop/api/getonedata.php?id_laptop=1121 |
+
+* Parameter
+| Method | Parameter | Header | Wajib |
+|--------|-----------|--------|-------|
+| Get    | id_laptop | Key    | Iya   |
+
+** Response
+Respon sukses
+{
+    "status": {
+        "code": 200,
+        "description": "Request Valid"
+    },
+    "results": [
+        {
+            "id_laptop": "1121",
+            "company": "MSI",
+            "product": "GE72 Apache",
+            "type_name": "Gaming",
+            "inches": "17.3",
+            "screen_resolution": "Full HD 1920x1080",
+            "cpu": "Intel Core i7 6700HQ 2.6GHz",
+            "ram": "8GB",
+            "memory": "128GB SSD +  1TB HDD",
+            "gpu": "Nvidia GeForce GTX 960M",
+            "op_sys": "Windows 10",
+            "weight": "2.9kg",
+            "price_euros": "1511.19"
+        }
+    ]
+}
+
+Respon gagal
+{
+    "status": {
+        "code": 400,
+        "description": "Request Invalid"
+    }
+}
