@@ -1,0 +1,150 @@
+*Search by type
+search digunakan untuk mencari merek laptop yang diinginkan dengan menggunakan parameter type laptop
+
+** URL
+| Method |                              Url                              |
+|:------:|:-------------------------------------------------------------:|
+|   Get  | http://localhost/apilaptop/api/search_type.php?type_name=book |
+
+** Parameter
+| Method | Parameter | Header | Wajib |
+|--------|-----------|--------|-------|
+| Get    | company   | Key    | Iya   |
+
+
+** Respon
+Respon Sukses
+{
+    "status": {
+        "code": 200,
+        "description": "Request Valid"
+    },
+    "results": [
+        {
+            "id_laptop": "22",
+            "company": "Lenovo",
+            "product": "Legion Y520-15IKBN",
+            "type_name": "Gaming",
+            "inches": "15.6",
+            "screen_resolution": "IPS Panel Full HD 1920x1080",
+            "cpu": "Intel Core i5 7300HQ 2.5GHz",
+            "ram": "8GB",
+            "memory": "128GB SSD +  1TB HDD",
+            "gpu": "Nvidia GeForce GTX 1050",
+            "op_sys": "Windows 10",
+            "weight": "2.5kg",
+            "price_euros": "999.00"
+        },
+        {
+            "id_laptop": "42",
+            "company": "Dell",
+            "product": "Inspiron 7577",
+            "type_name": "Gaming",
+            "inches": "15.6",
+            "screen_resolution": "IPS Panel Full HD 1920x1080",
+            "cpu": "Intel Core i7 7700HQ 2.8GHz",
+            "ram": "16GB",
+            "memory": "256GB SSD +  1TB HDD",
+            "gpu": "Nvidia GeForce GTX 1060",
+            "op_sys": "Windows 10",
+            "weight": "2.65kg",
+            "price_euros": "1499.00"
+        },
+        {
+            "id_laptop": "48",
+            "company": "Asus",
+            "product": "Rog Strix",
+            "type_name": "Gaming",
+            "inches": "17.3",
+            "screen_resolution": "Full HD 1920x1080",
+            "cpu": "AMD Ryzen 1700 3GHz",
+            "ram": "8GB",
+            "memory": "256GB SSD +  1TB HDD",
+            "gpu": "AMD Radeon RX 580",
+            "op_sys": "Windows 10",
+            "weight": "3.2kg",
+            "price_euros": "1299.00"
+        },
+        {
+            "id_laptop": "59",
+            "company": "MSI",
+            "product": "GS73VR 7RG",
+            "type_name": "Gaming",
+            "inches": "17.3",
+            "screen_resolution": "Full HD 1920x1080",
+            "cpu": "Intel Core i7 7700HQ 2.8GHz",
+            "ram": "16GB",
+            "memory": "256GB SSD +  2TB HDD",
+            "gpu": "Nvidia GeForce GTX 1070",
+            "op_sys": "Windows 10",
+            "weight": "2.43kg",
+            "price_euros": "2449.00"
+        },
+        {
+            "id_laptop": "71",
+            "company": "Asus",
+            "product": "FX753VE-GC093 (i7-7700HQ/12GB/1TB/GeForce",
+            "type_name": "Gaming",
+            "inches": "17.3",
+            "screen_resolution": "Full HD 1920x1080",
+            "cpu": "Intel Core i7 7700HQ 2.8GHz",
+            "ram": "12GB",
+            "memory": "1TB HDD",
+            "gpu": "Nvidia GeForce GTX 1050 Ti",
+            "op_sys": "Linux",
+            "weight": "3kg",
+            "price_euros": "949.00"
+        },
+        {
+            "id_laptop": "75",
+            "company": "MSI",
+            "product": "GL72M 7RDX",
+            "type_name": "Gaming",
+            "inches": "17.3",
+            "screen_resolution": "Full HD 1920x1080",
+            "cpu": "Intel Core i5 7300HQ 2.5GHz",
+            "ram": "8GB",
+            "memory": "128GB SSD +  1TB HDD",
+            "gpu": "Nvidia GeForce GTX 1050",
+            "op_sys": "Windows 10",
+            "weight": "2.7kg",
+            "price_euros": "1095.00"
+        },
+        {
+            "id_laptop": "77",
+            "company": "Asus",
+            "product": "FX503VD-E4022T (i7-7700HQ/8GB/1TB/GeForce",
+            "type_name": "Gaming",
+            "inches": "15.6",
+            "screen_resolution": "Full HD 1920x1080",
+            "cpu": "Intel Core i7 7700HQ 2.8GHz",
+            "ram": "8GB",
+            "memory": "1TB HDD",
+            "gpu": "Nvidia GeForce GTX 1050",
+            "op_sys": "Windows 10",
+            "weight": "2.2kg",
+            "price_euros": "949.00"
+        },
+        {
+            "id_laptop": "87",
+            "company": "Dell",
+            "product": "Inspiron 7577",
+            "type_name": "Gaming",
+            "inches": "15.6",
+            "screen_resolution": "IPS Panel Full HD 1920x1080",
+            "cpu": "Intel Core i7 7700HQ 2.8GHz",
+            "ram": "16GB",
+            "memory": "128GB SSD +  1TB HDD",
+            "gpu": "Nvidia GeForce GTX 1050 Ti",
+            "op_sys": "Windows 10",
+            "weight": "2.65kg",
+            "price_euros": "1349.00"
+        },
+        
+Respon gagal
+{
+    "status": {
+        "code": 400,
+        "description": "Request Invalid"
+    }
+}
